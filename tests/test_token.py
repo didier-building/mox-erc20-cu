@@ -7,7 +7,7 @@ def test_token_supply():
     snek_token = deploy()
     assert snek_token.totalSupply() == INITIAL_SUPPLY, "Total supply does not match the expected value"
 
-def test_token_emits_events():
+def test_token_emits_logs():
     snek_token = deploy()
     with boa.env.prank(snek_token.owner()):
         snek_token.transfer(RANDOM_USER, INITIAL_SUPPLY)
