@@ -1,4 +1,4 @@
-from script.deploy import deploy, INITIAL_SUPPLY
+from script.deploy import  INITIAL_SUPPLY
 import boa
 
 RANDOM_USER = boa.env.generate_address("random_user")

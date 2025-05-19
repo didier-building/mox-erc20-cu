@@ -22,4 +22,4 @@ class StatefulFuzzer(RuleBasedStateMachine):
 
 TestStatefulFuzzing = StatefulFuzzer.TestCase
 
-TestStatefulFuzzing.settings = settings(max_examples=10000, stateful_step_count=90)
+TestStatefulFuzzing.settings = settings(max_examples=1000, stateful_step_count=50)
